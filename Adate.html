@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DayDive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    
+    <!-- header -->            
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">DayDive</a>
+                <div class="navbar-nav">
+                    <a href="./Index.html">home</a>
+                    <a href="./Search.html">Search</a>
+                    <a href = "./weather.html">Weather</a>
+                    <a href="./Adate.html">Add new date</a>
+                    <a href="./about.html">about us</a>
+                </div>
+            </div>
+        </nav>
+
+        <style>
+          
+
+            .frm_container{
+                width: 100%;
+                height: 50%;
+               
+                background: #a9baf0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+              
+            }
+
+
+            form{
+                    background: #ffffff;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    padding: 2vw 4vw;
+                    width: 100%;
+                    max-width: 900px;
+                    /* height: 1000px; */
+                    border-radius: 10px;
+                }
+                
+
+                form h1{
+                    color: #000;
+                    font-weight: 800px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+                form p{
+                    font-weight: 700;
+                    text-align: center;
+                    
+                  
+
+                }
+
+                form h3{
+                    color: #555;
+                    margin-top: 20;
+                    margin-bottom: 20px;
+                }
+
+                form p{
+                    color: #555;
+                    font-weight: 700px;
+                    margin-bottom: 20px;
+                
+                }
+
+                form input, form textarea{
+
+                    border: 10px;
+                    margin: 10px, 0;
+                    padding: 20px;
+                    outline: none;
+                    background-color: #dbcfcf;
+                    font-size: 16px;
+                    border-radius: 20px;
+                    
+
+                }
+
+                input[type= button]{
+                    background-color: rgb(226, 84, 84);
+                    margin-top: 20px;
+                    margin-left: 150px;
+
+                    color: white;
+                    padding: 12px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    align-items: center;
+                    width: 60%;
+
+                }
+
+                input[type= button]:hover{
+                    background: #000;
+                    border: 1px solid #4070f4;
+                }
+
+
+
+
+        </style>
+
+
+            <div class="frm_container">
+                <form >
+                    <h1 >Add a new date to DayDive</h1>
+                    <p>(Fill all information given below along with your personal detail)</p>
+
+                    <h3>Enter your name here </h3>
+                    <input type="text"  id="name" placeholder="Your name"  required>
+
+                    <h3>Enter your Email id here </h3>
+                    <input type="email"  id="email" placeholder="Your Email"  required>
+
+                    <h3>Enter your Contact no.</h3>
+                    <input type="text"  id="text" placeholder="Your Contact no."  required>
+
+                    <h3>Select a date</h3>
+                    <input type="date"  id="date" placeholder="pick the date"  required>
+
+                    <h3>Describe the day here </h3>                   
+                    <textarea id="dayname"  rows="10" placeholder="Enter the a brief history and other information about this day"></textarea>
+
+                    <h3>Your message </h3>                   
+                    <textarea id="massage"  rows="5" placeholder="Enter other personal massage to day dive"></textarea>
+
+                    <input type="button" value="Add to DayDive" onclick="Send()" id="button">
+                </form>
+
+
+            </div>
+
+            <!-- Adding email facitlity -->
+
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+            <!-- send popup -->
+            <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+        
+            <script>
+                function Send(){
+                    console.log("Function call");
+
+                    var name = document.getElementById("name").value;
+                    var email = document.getElementById("email").value;
+                    var number = document.getElementById("text").value;
+                    var date = document.getElementById("date").value;
+                    var dname = document.getElementById("dayname").value;
+                    var massage = document.getElementById("massage").value;
+
+                    var body = "Name: "+ name + "<br> Email: "+ email + "<br> Contact number: "+ number + "<br> Date: "+ date + "<br> Day Name: "+ dname + "<br> Massage: "+ massage;
+                    console.log(body);
+
+                    Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "ritvikrai789@gmail.com",
+                    Password : "86FCC9C277CAA9048237F7967E63A27B4AA4",
+                   To : 'abhimanyu07052072434@gmail.com',
+                   From : "ritvikrai789@gmail.com", 
+                   Subject : "A new Enquiry",
+                   Body : body
+                }).then(
+                  message => alert(massage)
+                    
+                );
+                }
+            </script>
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <span>©2023 Revision Legal. All Rights Reserved.</span>
+    </footer>
+    <!-- end of footer -->
+
+
+
+</body>
+
+</html>

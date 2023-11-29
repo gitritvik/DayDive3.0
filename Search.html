@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DayDive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+
+    <style>
+      /* Style the blog post container */
+
+  #blog-posts {
+    width: 400px;
+    /* display: flex; */
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dedede;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(110, 110, 110, 0.74);
+}
+.banner{
+  color: black;
+}
+
+/* Style the individual blog post */
+/* .blog-post {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} */
+    </style>
+   
+
+
+    <!-- header -->
+    <header>
+      <nav class = "navbar">
+        <div class = "container">
+          <a href = "Index.html" class = "navbar-brand">DayDive</a>
+          <div class = "navbar-nav">
+            <a href = "Index.html">home</a>
+            <a href = "./Search.html">Search</a>
+            <a href = "./weather.html">Weather</a>
+            <a href = "./Adate.html">Add new date</a>
+            <a href = "./about.html">about us</a>
+          </div>
+        </div>
+
+      
+
+      </nav>
+
+
+        <!-- Dae and time -->
+        <h2 style="text-align: center; margin-top: 30px;">Current Time and Date:</h2>
+        <div style="text-align: center; margin-top: 20px; ;" id="datetime"></div>
+
+
+      <div class = "banner">
+        <div class = "container">
+          <h1 class = "banner-title">
+            <span style="color: white;">Enter your date Here</span>
+          
+          </h1>
+          <form style="margin-top: 80px;">
+            <input id="datepicker" type = "date" class = "search-input" placeholder="find about your day ">
+
+            <!-- <button type = "submit" class = "search-btn">         
+              <i class = "fas fa-search"></i>
+            </button> -->
+
+
+          </form>
+          <div id="blog-posts">
+        
+            <!-- Blog posts will be displayed here based on the selected date -->
+        </div>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+
+     <!-- design1 -->
+     <section class = "design" id = "design">
+      <div class = "container">
+        <div class = "title">
+          <h2>Some Importent Days</h2>
+          <p>Know all about this Day</p>
+        </div>
+
+        <div class = "design-content">
+          <!-- item -->
+          <div class = "design-item">
+            <div class = "design-img">
+              <img src = "./images/podcast.jpg" alt = "">
+              <span><i class = "far fa-heart"></i> 22</span>
+              <span>Happy Podcast Day</span>
+            </div>
+            <div class = "design-title">
+              
+              <div class = "blog-text">
+                <span>30 September</span>
+                <h2>International podcast Day </h2>
+                <p>know about International podcast Day </p>
+                <a href = "./Blog/podcast.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "design-item">
+            <div class = "design-img">
+              <img src = "images/sc.png" alt = "">
+              <span><i class = "far fa-heart"></i> 22</span>
+              <span>Happy Diwali</span>
+            </div>
+            <div class = "design-title">
+             
+              <div class = "blog-text">
+                <span>20 January, 2020</span>
+                <h2>National Science Day (India)</h2>
+                <p>know about National Science Day (India)</p>
+                <a href = "./Blog/blog.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "design-item">
+            <div class = "design-img">
+              <img src = "images/unity.jpeg" alt = "">
+              <span><i class = "far fa-heart"></i> 22</span>
+              <span>Happy National unity day</span>
+            </div>
+            <div class = "design-title">
+              <div class = "blog-text">
+                <span>31 October</span>
+                <h2>National Unity Day</h2>
+                <p>know about National Unity Day</p>
+                <a href = "./Blog/unityday.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- end of item -->         
+        </div>
+      </div>
+    </section>
+    <!-- end of design -->
+
+ 
+
+    <style>
+      /* Style the blog post container */
+
+  #blog-posts {
+    width: 400px;
+    /* display: flex; */
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dedede;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(110, 110, 110, 0.74);
+}
+.banner{
+  color: black;
+}
+
+/* Style the individual blog post */
+ .blog-post {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} 
+    </style>
+     
+
+    
+
+    <!-- footer -->
+    <footer>
+      <div class = "social-links">
+        <a href = "#"><i class = "fab fa-facebook-f"></i></a>
+        <a href = "#"><i class = "fab fa-twitter"></i></a>
+        <a href = "#"><i class = "fab fa-instagram"></i></a>
+        <a href = "#"><i class = "fab fa-pinterest"></i></a>
+      </div>
+      <span>©2023 Revision Legal. All Rights Reserved.</span>
+    </footer>
+    <!-- end of footer -->
+    
+    <script>
+
+
+
+      // Function to update the current time and date
+      function updateDateTime() {
+          const now = new Date();
+          const datetimeElement = document.getElementById("datetime");
+          datetimeElement.textContent = now.toLocaleString();
+      }
+
+      // Update the time and date initially
+      updateDateTime();
+
+      // Set up a timer to update the time and date every second
+      setInterval(updateDateTime, 1000);
+  
+    
+
+      // Sample blog post data (you can replace this with your own data)
+      const blogPosts = [
+
+      
+
+    
+  { img: './images/day2.jpg', title: 'National Science Fiction Day', date: '2023-01-02', content: 'Celebrating the wonders of science fiction.', link: 'https://en.wikipedia.org/wiki/National_Science_Fiction_Day' },
+  { img: './images/day3.jpg', title: 'International Mind-Body Wellness Day', date: '2023-01-03', content: 'Focusing on holistic well-being for a healthier life.', link: 'https://en.wikipedia.org/wiki/Wellness' },
+  { img: './images/day4.jpg', title: 'World Braille Day', date: '2023-01-04', content: 'Promoting accessibility for visually impaired individuals.', link: 'https://en.wikipedia.org/wiki/World_Braille_Day' },
+  { img: './images/day5.jpg', title: 'Global Family Day', date: '2023-01-05', content: 'Celebrating the importance of family bonds worldwide.', link: 'https://en.wikipedia.org/wiki/Global_Family_Day' },
+  { img: './images/day6.jpg', title: 'World War Orphans Day', date: '2023-01-06', content: 'Honoring the resilience of war orphans and supporting their well-being.', link: 'https://en.wikipedia.org/wiki/International_Day_for_War_Orphans' },
+  { img: './images/day7.jpg', title: 'International Programmers\' Day', date: '2023-01-07', content: 'Acknowledging the contributions of programmers worldwide.', link: 'https://en.wikipedia.org/wiki/Day_of_the_Programmer' },
+  { img: './images/day8.jpg', title: 'World Religion Day', date: '2023-01-08', content: 'Promoting interfaith understanding and harmony.', link: 'https://en.wikipedia.org/wiki/World_Religion_Day' },
+  { img: './images/day9.jpg', title: 'International Thank-You Day', date: '2023-01-09', content: 'Expressing gratitude for the positive aspects of life.', link: 'https://en.wikipedia.org/wiki/Thank_You_Day' },
+  { img: './images/day10.jpg', title: 'Human Trafficking Awareness Day', date: '2023-01-10', content: 'Raising awareness about the issue of human trafficking.', link: 'https://en.wikipedia.org/wiki/National_Human_Trafficking_Awareness_Day' },
+  { img: './images/day11.jpg', title: 'World Snow Day', date: '2023-01-11', content: 'Celebrating the joy of snow sports and winter activities.', link: 'https://en.wikipedia.org/wiki/World_Snow_Day' },
+  { img: './images/day12.jpg', title: 'National Youth Day (India)', date: '2023-01-12', content: 'Celebrating the birthday of Swami Vivekananda.', link: 'https://en.wikipedia.org/wiki/National_Youth_Day_(India)' },
+  { img: './images/day13.jpg', title: 'Stephen Foster Memorial Day', date: '2023-01-13', content: 'Honoring the American songwriter Stephen Foster.', link: 'https://en.wikipedia.org/wiki/Stephen_Foster_Memorial_Day' },
+  { img: './images/day14.jpg', title: 'Makar Sankranti', date: '2023-01-14', content: 'Celebrating the harvest festival in India.', link: 'https://en.wikipedia.org/wiki/Makar_Sankranti' },
+  { img: './images/day15.jpg', title: 'Martin Luther King Jr. Day', date: '2023-01-15', content: 'Honoring the civil rights leader Martin Luther King Jr.', link: 'https://en.wikipedia.org/wiki/Martin_Luther_King_Jr._Day' },
+  { img: './images/day16.jpg', title: 'International Hot and Spicy Food Day', date: '2023-01-16', content: 'Celebrating the love for hot and spicy foods worldwide.', link: 'https://en.wikipedia.org/wiki/International_Hot_and_Spicy_Food_Day' },
+  { img: './images/day17.jpg', title: 'Benjamin Franklin Day', date: '2023-01-17', content: 'Honoring the birthday of Benjamin Franklin.', link: 'https://en.wikipedia.org/wiki/Benjamin_Franklin_Day' },
+  { img: './images/day18.jpg', title: 'Winnie the Pooh Day', date: '2023-01-18', content: 'Celebrating the birthday of A.A. Milne, the author of Winnie the Pooh.', link: 'https://en.wikipedia.org/wiki/Winnie_the_Pooh_Day' },
+  { img: './images/day19.jpg', title: 'National Popcorn Day', date: '2023-01-19', content: 'Enjoying the popular snack, popcorn.', link: 'https://en.wikipedia.org/wiki/National_Popcorn_Day' },
+  { img: './images/day20.jpg', title: 'Inauguration Day (United States)', date: '2023-01-20', content: 'Marking the inauguration of the President of the United States.', link: 'https://en.wikipedia.org/wiki/Inauguration_Day_(United_States)' },
+  { img: './images/day21.jpg', title: 'World Hug Day', date: '2023-01-21', content: 'Celebrating the warmth and connection of hugs.', link: 'https://en.wikipedia.org/wiki/National_Hugging_Day' },
+  { img: './images/day22.jpg', title: 'International Sweatpants Day', date: '2023-01-22', content: 'Enjoying comfort in sweatpants worldwide.', link: 'https://en.wikipedia.org/wiki/National_Sweatpants_Day' },
+  { img: './images/day23.jpg', title: 'National Handwriting Day', date: '2023-01-23', content: 'Celebrating the art of handwriting.', link: 'https://en.wikipedia.org/wiki/National_Handwriting_Day' },
+  { img: './images/day24.jpg', title: 'International Day of Education', date: '2023-01-24', content: 'Promoting education worldwide.', link: 'https://en.wikipedia.org/wiki/International_Day_of_Education' },
+  { img: './images/day25.jpg', title: 'Burns Night', date: '2023-01-25', content: 'Celebrating the life and poetry of Robert Burns.', link: 'https://en.wikipedia.org/wiki/Burns_supper' },
+  { img: './images/day26.jpg', title: 'Australia Day', date: '2023-01-26', content: 'Celebrating Australia\'s national day.', link: 'https://en.wikipedia.org/wiki/Australia_Day' },
+  { img: './images/day27.jpg', title: 'International Holocaust Remembrance Day', date: '2023-01-27', content: 'Remembering the victims of the Holocaust.', link: 'https://en.wikipedia.org/wiki/International_Holocaust_Remembrance_Day' },
+  { img: './images/day28.jpg', title: 'Data Privacy Day', date: '2023-01-28', content: 'Promoting awareness and protection of personal data.', link: 'https://en.wikipedia.org/wiki/Data_Privacy_Day' },
+  { img: './images/day29.jpg', title: 'National Puzzle Day', date: '2023-01-29', content: 'Celebrating the joy of puzzles.', link: 'https://en.wikipedia.org/wiki/National_Puzzle_Day' },
+  { img: './images/day30.jpg', title: 'World Leprosy Day', date: '2023-01-30', content: 'Raising awareness about leprosy and supporting those affected.', link: 'https://en.wikipedia.org/wiki/World_Leprosy_Day' },
+  { img: './images/day31.jpg', title: 'Month-end Reflection', date: '2023-01-31', content: 'Reflecting on the achievements of the month.', link: 'Your_Wikipedia_Link_Here' },
+
+
+  { img: './images/feb_day1.jpg', title: 'National Freedom Day', date: '2023-02-01', content: 'Celebrating freedom and equal rights.', link: 'https://en.wikipedia.org/wiki/National_Freedom_Day' },
+  { img: './images/feb_day2.jpg', title: 'World Wetlands Day', date: '2023-02-02', content: 'Promoting the importance of wetlands.', link: 'https://en.wikipedia.org/wiki/World_Wetlands_Day' },
+  { img: './images/feb_day3.jpg', title: 'International Day of Women and Girls in Science', date: '2023-02-03', content: 'Recognizing the contributions of women in science.', link: 'https://en.wikipedia.org/wiki/International_Day_of_Women_and_Girls_in_Science' },
+  { img: './images/feb_day4.jpg', title: 'World Cancer Day', date: '2023-02-04', content: 'Raising awareness about cancer prevention and treatment.', link: 'https://en.wikipedia.org/wiki/World_Cancer_Day' },
+  { img: './images/feb_day5.jpg', title: 'Chinese New Year', date: '2023-02-05', content: 'Celebrating the Chinese New Year.', link: 'https://en.wikipedia.org/wiki/Chinese_New_Year' },
+  { img: './images/feb_day6.jpg', title: 'International Day of Zero Tolerance for Female Genital Mutilation', date: '2023-02-06', content: 'Promoting the end of female genital mutilation.', link: 'https://en.wikipedia.org/wiki/International_Day_of_Zero_Tolerance_for_Female_Genital_Mutilation' },
+  { img: './images/feb_day7.jpg', title: 'Rose Day', date: '2023-02-07', content: 'Celebrating love and friendship with roses.', link: 'https://en.wikipedia.org/wiki/Rose_Day' },
+  { img: './images/feb_day8.jpg', title: 'Safer Internet Day', date: '2023-02-08', content: 'Promoting a safer and better internet for everyone.', link: 'https://en.wikipedia.org/wiki/Safer_Internet_Day' },
+  { img: './images/feb_day9.jpg', title: 'National Toothache Day', date: '2023-02-09', content: 'Promoting dental health and awareness.', link: 'https://en.wikipedia.org/wiki/Toothache' },
+  { img: './images/feb_day10.jpg', title: 'World Pulses Day', date: '2023-02-10', content: 'Highlighting the importance of pulses in a healthy diet.', link: 'https://en.wikipedia.org/wiki/World_Pulses_Day' },
+  { img: './images/feb_day12.jpg', title: 'Darwin Day', date: '2023-02-12', content: 'Celebrating the birthday of Charles Darwin.', link: 'https://en.wikipedia.org/wiki/Darwin_Day' },
+  { img: './images/feb_day13.jpg', title: 'World Radio Day', date: '2023-02-13', content: 'Promoting the importance of radio in communication.', link: 'https://en.wikipedia.org/wiki/World_Radio_Day' },
+  { img: './images/feb_day14.jpg', title: 'Valentine\'s Day', date: '2023-02-14', content: 'Celebrating love and affection.', link: 'https://en.wikipedia.org/wiki/Valentine%27s_Day' },
+  { img: './images/feb_day15.jpg', title: 'International Childhood Cancer Day', date: '2023-02-15', content: 'Raising awareness about childhood cancer.', link: 'https://en.wikipedia.org/wiki/International_Childhood_Cancer_Day' },
+  { img: './images/feb_day16.jpg', title: 'World Pangolin Day', date: '2023-02-16', content: 'Highlighting the conservation of pangolins.', link: 'https://en.wikipedia.org/wiki/World_Pangolin_Day' },
+  { img: './images/feb_day17.jpg', title: 'Random Acts of Kindness Day', date: '2023-02-17', content: 'Encouraging kindness and generosity.', link: 'https://en.wikipedia.org/wiki/Random_Acts_of_Kindness_Day' },
+  { img: './images/feb_day18.jpg', title: 'World Whale Day', date: '2023-02-18', content: 'Promoting the conservation of whales.', link: 'https://en.wikipedia.org/wiki/World_Whale_Day' },
+  { img: './images/feb_day19.jpg', title: 'International Mother Language Day', date: '2023-02-19', content: 'Celebrating linguistic diversity and multilingualism.', link: 'https://en.wikipedia.org/wiki/International_Mother_Language_Day' },
+  { img: './images/feb_day20.jpg', title: 'World Day of Social Justice', date: '2023-02-20', content: 'Promoting social justice and equality.', link: 'https://en.wikipedia.org/wiki/World_Day_of_Social_Justice' },
+  { img: './images/feb_day22.jpg', title: 'World Thinking Day', date: '2023-02-22', content: 'Encouraging thinking and reflection.', link: 'https://en.wikipedia.org/wiki/World_Thinking_Day' },
+  { img: './images/feb_day23.jpg', title: 'World Bartender Day', date: '2023-02-23', content: 'Celebrating the art of bartending.', link: 'https://en.wikipedia.org/wiki/World_Bartender_Day' },
+  { img: './images/feb_day24.jpg', title: 'World Yoga Day', date: '2023-02-24', content: 'Promoting the practice of yoga worldwide.', link: 'https://en.wikipedia.org/wiki/International_Day_of_Yoga' },
+  { img: './images/feb_day25.jpg', title: 'National Tooth Fairy Day', date: '2023-02-25', content: 'Celebrating the mythical Tooth Fairy.', link: 'https://en.wikipedia.org/wiki/Tooth_fairy' },
+  { img: './images/feb_day26.jpg', title: 'World Pistachio Day', date: '2023-02-26', content: 'Celebrating the delicious pistachio nut.', link: 'https://en.wikipedia.org/wiki/Pistachio' },
+  { img: './images/feb_day27.jpg', title: 'International Polar Bear Day', date: '2023-02-27', content: 'Raising awareness about the conservation of polar bears.', link: 'https://en.wikipedia.org/wiki/International_Polar_Bear_Day' },
+  { img: './images/feb_day28.jpg', title: 'Rare Disease Day', date: '2023-02-28', content: 'Increasing awareness about rare diseases.', link: 'https://en.wikipedia.org/wiki/Rare_Disease_Day' },
+
+  
+
+
+  { img: './images/mar_day1.jpg', title: 'St. David\'s Day', date: '2023-03-01', content: 'Celebrating the patron saint of Wales.', link: 'https://en.wikipedia.org/wiki/St_David%27s_Day' },
+  { img: './images/mar_day2.jpg', title: 'World Wildlife Day', date: '2023-03-02', content: 'Promoting awareness and conservation of wildlife.', link: 'https://en.wikipedia.org/wiki/World_Wildlife_Day' },
+  { img: './images/mar_day3.jpg', title: 'World Hearing Day', date: '2023-03-03', content: 'Raising awareness about hearing loss and prevention.', link: 'https://en.wikipedia.org/wiki/World_Hearing_Day' },
+  { img: './images/mar_day4.jpg', title: 'Employee Appreciation Day', date: '2023-03-04', content: 'Recognizing and thanking employees for their hard work.', link: 'https://en.wikipedia.org/wiki/Employee_Appreciation_Day' },
+  { img: './images/mar_day5.jpg', title: 'World Book Day', date: '2023-03-05', content: 'Celebrating books, authors, and reading worldwide.', link: 'https://en.wikipedia.org/wiki/World_Book_Day' },
+  { img: './images/mar_day6.jpg', title: 'International Women\'s Day', date: '2023-03-08', content: 'Celebrating the achievements and contributions of women.', link: 'https://en.wikipedia.org/wiki/International_Women%27s_Day' },
+  { img: './images/mar_day7.jpg', title: 'Pi Day', date: '2023-03-14', content: 'Celebrating the mathematical constant π (pi).', link: 'https://en.wikipedia.org/wiki/Pi_Day' },
+  
+  { img: './images/mar_day1.jpg', title: 'Zero Discrimination Day', date: '2023-03-01', content: 'Promoting equality and ending discrimination.', link: 'https://en.wikipedia.org/wiki/Zero_Discrimination_Day' },
+  { img: './images/mar_day2.jpg', title: 'National Science Day', date: '2023-03-02', content: 'Celebrating the discovery of the Raman Effect by C.V. Raman.', link: 'https://en.wikipedia.org/wiki/National_Science_Day' },
+  { img: './images/mar_day4.jpg', title: 'National Security Day', date: '2023-03-04', content: 'Honoring the security forces of India.', link: 'https://en.wikipedia.org/wiki/National_Security_Day_(India)' },
+  { img: './images/mar_day5.jpg', title: 'Chapchar Kut (Mizo Festival)', date: '2023-03-05', content: 'Celebrating the spring festival of Mizoram.', link: 'https://en.wikipedia.org/wiki/Chapchar_Kut' },
+  { img: './images/mar_day6.jpg', title: 'World Civil Defence Day', date: '2023-03-06', content: 'Highlighting the importance of civil protection and preparedness.', link: 'https://en.wikipedia.org/wiki/World_Civil_Defence_Day' },
+  { img: './images/mar_day7.jpg', title: 'Janmashthami (Birth of Chaitanya Mahaprabhu)', date: '2023-03-07', content: 'Celebrating the birth of Chaitanya Mahaprabhu.', link: 'https://en.wikipedia.org/wiki/Chaitanya_Mahaprabhu' },
+  { img: './images/mar_day9.jpg', title: 'Maharishi Dayanand Saraswati Jayanti', date: '2023-03-09', content: 'Commemorating the founder of the Arya Samaj.', link: 'https://en.wikipedia.org/wiki/Dayananda_Saraswati' },
+  { img: './images/mar_day10.jpg', title: 'No Smoking Day', date: '2023-03-10', content: 'Promoting awareness about the risks of smoking.', link: 'https://en.wikipedia.org/wiki/No_Smoking_Day' },
+  { img: './images/mar_day11.jpg', title: 'Commonwealth Day', date: '2023-03-11', content: 'Celebrating the Commonwealth of Nations.', link: 'https://en.wikipedia.org/wiki/Commonwealth_Day' },
+  { img: './images/mar_day12.jpg', title: 'World Day Against Cyber Censorship', date: '2023-03-12', content: 'Promoting online freedom of expression.', link: 'https://en.wikipedia.org/wiki/World_Day_Against_Cyber_Censorship' },
+  { img: './images/mar_day13.jpg', title: 'Indian Army Day', date: '2023-03-13', content: 'Commemorating the Indian Army.', link: 'https://en.wikipedia.org/wiki/Indian_Army_Day' },
+  { img: './images/mar_day15.jpg', title: 'World Consumer Rights Day', date: '2023-03-15', content: 'Raising awareness about consumer rights.', link: 'https://en.wikipedia.org/wiki/World_Consumer_Rights_Day' },
+  { img: './images/mar_day16.jpg', title: 'Meena Sankranti', date: '2023-03-16', content: 'Celebrating a Hindu festival dedicated to Meena, the zodiac sign Pisces.', link: 'https://en.wikipedia.org/wiki/Meena_Sankranti' },
+  { img: './images/mar_day17.jpg', title: 'World Sparrow Day', date: '2023-03-17', content: 'Raising awareness about the conservation of sparrows.', link: 'https://en.wikipedia.org/wiki/World_Sparrow_Day' },
+  { img: './images/mar_day18.jpg', title: 'Ordnance Factories Day', date: '2023-03-18', content: 'Commemorating the Indian Ordnance Factories.', link: 'https://en.wikipedia.org/wiki/Ordnance_Factories_Day' },
+  { img: './images/mar_day19.jpg', title: 'Cheti Chand (Sindhi New Year)', date: '2023-03-19', content: 'Celebrating the Sindhi New Year.', link: 'https://en.wikipedia.org/wiki/Cheti_Chand' },
+  { img: './images/mar_day20.jpg', title: 'International Day of Happiness', date: '2023-03-20', content: 'Promoting happiness and well-being worldwide.', link: 'https://en.wikipedia.org/wiki/International_Day_of_Happiness' },
+  { img: './images/mar_day21.jpg', title: 'World Forestry Day', date: '2023-03-21', content: 'Highlighting the importance of forests.', link: 'https://en.wikipedia.org/wiki/International_Day_of_Forests' },
+  { img: './images/mar_day22.jpg', title: 'World Water Day', date: '2023-03-22', content: 'Highlighting the importance of freshwater resources.', link: 'https://en.wikipedia.org/wiki/World_Water_Day' },
+  { img: './images/mar_day23.jpg', title: 'Shaheed Diwas (Bhagat Singh, Sukhdev, Rajguru)', date: '2023-03-23', content: 'Remembering the sacrifice of Bhagat Singh, Sukhdev, and Rajguru.', link: 'https://en.wikipedia.org/wiki/Bhagat_Singh' },
+  { img: './images/mar_day24.jpg', title: 'Tamil New Year', date: '2023-03-24', content: 'Celebrating the Tamil New Year.', link: 'https://en.wikipedia.org/wiki/Tamil_New_Year' },
+  { img: './images/mar_day25.jpg', title: 'International Day of Remembrance of the Victims of Slavery and the Transatlantic Slave Trade', date: '2023-03-25', content: 'Remembering the victims of slavery.', link: 'https://en.wikipedia.org/wiki/International_Day_of_Remembrance_of_the_Victims_of_Slavery_and_the_Transatlantic_Slave_Trade' },
+  { img: './images/mar_day26.jpg', title: 'Bangladesh Liberation Day', date: '2023-03-26', content: 'Commemorating the independence of Bangladesh.', link: 'https://en.wikipedia.org/wiki/Bangladesh_Liberation_War' },
+  { img: './images/mar_day27.jpg', title: 'World Theatre Day', date: '2023-03-27', content: 'Celebrating theatre arts.', link: 'https://en.wikipedia.org/wiki/World_Theatre_Day' },
+  { img: './images/mar_day28.jpg', title: 'National Maritime Day', date: '2023-03-28', content: 'Commemorating India’s maritime history.', link: 'https://en.wikipedia.org/wiki/National_Maritime_Day_(India)' },
+  { img: './images/mar_day29.jpg', title: 'Ugadi (Karnataka, Telangana, Andhra Pradesh New Year)', date: '2023-03-29', content: 'Celebrating the New Year in Karnataka, Telangana, and Andhra Pradesh.', link: 'https://en.wikipedia.org/wiki/Ugadi' },
+  { img: './images/mar_day30.jpg', title: 'Good Friday', date: '2023-03-30', content: 'Observing the crucifixion of Jesus Christ.', link: 'https://en.wikipedia.org/wiki/Good_Friday' },
+  { img: './images/mar_day31.jpg', title: 'March-end Reflection', date: '2023-03-31', content: 'Reflecting on the achievements and events of March.', link: 'Your_Wikipedia_Link_Here' },
+
+  { img: './images/apr_day1.jpg', title: 'April Fools\' Day', date: '2023-04-01', content: 'Celebrating pranks and jokes.', link: 'https://en.wikipedia.org/wiki/April_Fools%27_Day' },
+  { img: './images/apr_day2.jpg', title: 'World Autism Awareness Day', date: '2023-04-02', content: 'Raising awareness about autism spectrum disorder.', link: 'https://en.wikipedia.org/wiki/World_Autism_Awareness_Day' },
+  { img: './images/apr_day3.jpg', title: 'International Children\'s Book Day', date: '2023-04-02', content: 'Promoting children\'s books and reading.', link: 'https://en.wikipedia.org/wiki/International_Children%27s_Book_Day' },
+  { img: './images/apr_day4.jpg', title: 'International Day of Mine Awareness', date: '2023-04-04', content: 'Raising awareness about landmines and their impact.', link: 'https://en.wikipedia.org/wiki/International_Day_of_Mine_Awareness' },
+  { img: './images/apr_day5.jpg', title: 'International Day of Conscience', date: '2023-04-05', content: 'Promoting peace, tolerance, and understanding.', link: 'https://en.wikipedia.org/wiki/International_Day_of_Conscience' },
+  { img: './images/apr_day6.jpg', title: 'International Day of Sport for Development and Peace', date: '2023-04-06', content: 'Highlighting the power of sport for social change.', link: 'https://en.wikipedia.org/wiki/International_Day_of_Sport_for_Development_and_Peace' },
+  { img: './images/apr_day7.jpg', title: 'World Health Day', date: '2023-04-07', content: 'Promoting global health and well-being.', link: 'https://en.wikipedia.org/wiki/World_Health_Day' },
+  { img: './images/apr_day8.jpg', title: 'International Roma Day', date: '2023-04-08', content: 'Celebrating Romani culture and raising awareness of Romani issues.', link: 'https://en.wikipedia.org/wiki/International_Roma_Day' },
+  { img: './images/apr_day9.jpg', title: 'National Unicorn Day', date: '2023-04-09', content: 'Celebrating the mythical unicorn.', link: 'https://en.wikipedia.org/wiki/Unicorn' },
+  { img: './images/apr_day10.jpg', title: 'World Homeopathy Day', date: '2023-04-10', content: 'Promoting awareness and understanding of homeopathy.', link: 'https://en.wikipedia.org/wiki/Homeopathy' },
+  { img: './images/apr_day11.jpg', title: 'International Day of Human Space Flight', date: '2023-04-12', content: 'Celebrating the first human space flight by Yuri Gagarin.', link: 'https://en.wikipedia.org/wiki/Yuri_Gagarin' },
+  { img: './images/apr_day12.jpg', title: 'International Day for Street Children', date: '2023-04-12', content: 'Raising awareness about the rights and challenges of street children.', link: 'https://en.wikipedia.org/wiki/International_Day_for_Street_Children' },
+  { img: './images/apr_day13.jpg', title: 'World Art Day', date: '2023-04-15', content: 'Celebrating the fine arts worldwide.', link: 'https://en.wikipedia.org/wiki/World_Art_Day' },
+  { img: './images/apr_day15.jpg', title: 'World Hemophilia Day', date: '2023-04-17', content: 'Raising awareness about hemophilia and other bleeding disorders.', link: 'https://en.wikipedia.org/wiki/World_Hemophilia_Day' },
+  { img: './images/apr_day16.jpg', title: 'World Voice Day', date: '2023-04-16', content: 'Celebrating the human voice and its importance.', link: 'https://en.wikipedia.org/wiki/World_Voice_Day' },
+  { img: './images/apr_day17.jpg', title: 'Earth Day', date: '2023-04-22', content: 'Promoting environmental protection and sustainability.', link: 'https://en.wikipedia.org/wiki/Earth_Day' },
+  { img: './images/apr_day18.jpg', title: 'World Penguin Day', date: '2023-04-25', content: 'Celebrating and raising awareness about penguins.', link: 'https://en.wikipedia.org/wiki/World_Penguin_Day' },
+  { img: './images/apr_day19.jpg', title: 'World Creativity and Innovation Day', date: '2023-04-21', content: 'Promoting creativity and innovation for a better future.', link: 'https://en.wikipedia.org/wiki/World_Creativity_and_Innovation_Day' },
+  { img: './images/apr_day20.jpg', title: 'International Mother Earth Day', date: '2023-04-22', content: 'Focusing on environmental issues and Mother Earth.', link: 'https://en.wikipedia.org/wiki/International_Mother_Earth_Day' },
+  { img: './images/apr_day21.jpg', title: 'World Book and Copyright Day', date: '2023-04-23', content: 'Celebrating books, authors, and copyright.', link: 'https://en.wikipedia.org/wiki/World_Book_and_Copyright_Day' },
+  { img: './images/apr_day22.jpg', title: 'World Malaria Day', date: '2023-04-25', content: 'Raising awareness about malaria and its prevention.', link: 'https://en.wikipedia.org/wiki/World_Malaria_Day' },
+  { img: './images/apr_day23.jpg', title: 'World Laboratory Day', date: '2023-04-23', content: 'Celebrating the role of laboratories in science and society.', link: 'https://en.wikipedia.org/wiki/World_Laboratory_Day' },
+  { img: './images/apr_day24.jpg', title: 'Armenian Genocide Remembrance Day', date: '2023-04-24', content: 'Remembering and honoring the victims of the Armenian Genocide.', link: 'https://en.wikipedia.org/wiki/Armenian_Genocide_Remembrance_Day' },
+  { img: './images/apr_day26.jpg', title: 'World Intellectual Property Day', date: '2023-04-26', content: 'Highlighting the role of intellectual property in encouraging innovation and creativity.', link: 'https://en.wikipedia.org/wiki/World_Intellectual_Property_Day' },
+  { img: './images/apr_day27.jpg', title: 'World Tapir Day', date: '2023-04-27', content: 'Raising awareness about tapirs and their conservation.', link: 'https://en.wikipedia.org/wiki/World_Tapir_Day' },
+  { img: './images/apr_day28.jpg', title: 'World Day for Safety and Health at Work', date: '2023-04-28', content: 'Promoting safe, healthy, and decent work.', link: 'https://en.wikipedia.org/wiki/World_Day_for_Safety_and_Health_at_Work' },
+  { img: './images/apr_day29.jpg', title: 'International Dance Day', date: '2023-04-29', content: 'Celebrating the art of dance worldwide.', link: 'https://en.wikipedia.org/wiki/International_Dance_Day' },
+  { img: './images/apr_day30.jpg', title: 'International Jazz Day', date: '2023-04-30', content: 'Celebrating the virtues of jazz as an educational tool, a force for peace, unity, dialogue, and enhanced cooperation among people.', link: 'https://en.wikipedia.org/wiki/International_Jazz_Day' },
+  { img: './images/apr_day31.jpg', title: 'Month-end Reflection', date: '2023-04-30', content: 'Reflecting on the achievements of the month.', link: 'Your_Wikipedia_Link_Here' },
+
+
+  { img: './images/may_day1.jpg', title: 'May Day', date: '2023-05-01', content: 'Celebrating laborers and the working class.', link: 'https://en.wikipedia.org/wiki/International_Workers%27_Day' },
+  { img: './images/may_day2.jpg', title: 'World Press Freedom Day', date: '2023-05-03', content: 'Promoting freedom of the press and journalists.', link: 'https://en.wikipedia.org/wiki/World_Press_Freedom_Day' },
+  { img: './images/may_day3.jpg', title: 'World Asthma Day', date: '2023-05-02', content: 'Raising awareness about asthma and its care.', link: 'https://en.wikipedia.org/wiki/World_Asthma_Day' },
+  { img: './images/may_day4.jpg', title: 'Star Wars Day', date: '2023-05-04', content: 'May the Force be with you!', link: 'https://en.wikipedia.org/wiki/Star_Wars_Day' },
+  { img: './images/may_day5.jpg', title: 'Cinco de Mayo', date: '2023-05-05', content: 'Celebrating the Mexican victory at the Battle of Puebla.', link: 'https://en.wikipedia.org/wiki/Cinco_de_Mayo' },
+  { img: './images/may_day6.jpg', title: 'Europe Day', date: '2023-05-09', content: 'Celebrating peace and unity in Europe.', link: 'https://en.wikipedia.org/wiki/Europe_Day' },
+  { img: './images/may_day7.jpg', title: 'World Migratory Bird Day', date: '2023-05-10', content: 'Promoting the conservation of migratory birds.', link: 'https://en.wikipedia.org/wiki/World_Migratory_Bird_Day' },
+  { img: './images/may_day8.jpg', title: 'Mother\'s Day', date: '2023-05-14', content: 'Honoring mothers and motherhood.', link: 'https://en.wikipedia.org/wiki/Mother%27s_Day' },
+  { img: './images/may_day9.jpg', title: 'International Day of Families', date: '2023-05-15', content: 'Promoting the importance of families.', link: 'https://en.wikipedia.org/wiki/International_Day_of_Families' },
+  { img: './images/may_day10.jpg', title: 'International Museum Day', date: '2023-05-18', content: 'Celebrating museums and cultural heritage.', link: 'https://en.wikipedia.org/wiki/International_Museum_Day' },
+  { img: './images/may_day11.jpg', title: 'World Bee Day', date: '2023-05-20', content: 'Promoting awareness of the importance of bees.', link: 'https://en.wikipedia.org/wiki/World_Bee_Day' },
+  { img: './images/may_day12.jpg', title: 'World Turtle Day', date: '2023-05-23', content: 'Raising awareness about the protection of turtles.', link: 'https://en.wikipedia.org/wiki/World_Turtle_Day' },
+  { img: './images/may_day13.jpg', title: 'Africa Day', date: '2023-05-25', content: 'Celebrating the unity of African countries.', link: 'https://en.wikipedia.org/wiki/Africa_Day' },
+  { img: './images/may_day14.jpg', title: 'World No Tobacco Day', date: '2023-05-31', content: 'Promoting awareness about the risks of tobacco use.', link: 'https://en.wikipedia.org/wiki/World_No_Tobacco_Day' },
+  { img: './images/may_day16.jpg', title: 'International Day of Light', date: '2023-05-16', content: 'Promoting the role of light in science, culture, and art.', link: 'https://en.wikipedia.org/wiki/International_Day_of_Light' },
+  { img: './images/may_day17.jpg', title: 'World Hypertension Day', date: '2023-05-17', content: 'Raising awareness about high blood pressure.', link: 'https://en.wikipedia.org/wiki/World_Hypertension_Day' },
+  { img: './images/may_day19.jpg', title: 'World Plant a Vegetable Garden Day', date: '2023-05-19', content: 'Encouraging people to plant their own vegetable gardens.', link: 'https://en.wikipedia.org/wiki/World_Plant_a_Vegetable_Garden_Day' },
+  { img: './images/may_day21.jpg', title: 'World Day for Cultural Diversity for Dialogue and Development', date: '2023-05-21', content: 'Promoting cultural diversity and understanding.', link: 'https://en.wikipedia.org/wiki/World_Day_for_Cultural_Diversity_for_Dialogue_and_Development' },
+  { img: './images/may_day22.jpg', title: 'International Day for Biological Diversity', date: '2023-05-22', content: 'Highlighting the importance of biodiversity.', link: 'https://en.wikipedia.org/wiki/International_Day_for_Biological_Diversity' },
+  { img: './images/may_day25.jpg', title: 'Geek Pride Day', date: '2023-05-25', content: 'Celebrating geek culture and individuality.', link: 'https://en.wikipedia.org/wiki/Geek_Pride_Day' },
+  { img: './images/may_day27.jpg', title: 'World MS Day', date: '2023-05-30', content: 'Raising awareness about multiple sclerosis.', link: 'https://en.wikipedia.org/wiki/World_MS_Day' },
+  { img: './images/may_day29.jpg', title: 'International Day of UN Peacekeepers', date: '2023-05-29', content: 'Honoring and remembering UN Peacekeepers.', link: 'https://en.wikipedia.org/wiki/International_Day_of_UN_Peacekeepers' },
+  { img: './images/may_day30.jpg', title: 'World Digestive Health Day', date: '2023-05-29', content: 'Promoting digestive health and well-being.', link: 'https://en.wikipedia.org/wiki/World_Digestive_Health_Day' },
+  { img: './images/may_day32.jpg', title: 'Month-end Reflection', date: '2023-05-31', content: 'Reflecting on the achievements of the month.', link: 'Your_Wikipedia_Link_Here' },
+
+
+    
+  { img: './images/jun_day1.jpg', title: 'World Milk Day', date: '2023-06-01', content: 'Celebrating the importance of milk in our diet.', link: 'https://en.wikipedia.org/wiki/World_Milk_Day' },
+  { img: './images/jun_day2.jpg', title: 'Telangana Statehood Day', date: '2023-06-02', content: 'Commemorating the formation of the state of Telangana.', link: 'https://en.wikipedia.org/wiki/Telangana_Statehood_Day' },
+  { img: './images/jun_day3.jpg', title: 'World Bicycle Day', date: '2023-06-03', content: 'Promoting the benefits of using bicycles for health and the environment.', link: 'https://en.wikipedia.org/wiki/World_Bicycle_Day' },
+  { img: './images/jun_day4.jpg', title: 'International Day of Innocent Children Victims of Aggression', date: '2023-06-04', content: 'Recognizing and acknowledging the pain suffered by children throughout the world who are the victims of physical, mental, and emotional abuse.', link: 'https://en.wikipedia.org/wiki/International_Day_of_Innocent_Children_Victims_of_Aggression' },
+  { img: './images/jun_day5.jpg', title: 'World Environment Day', date: '2023-06-05', content: 'Promoting worldwide awareness and action for the protection of the environment.', link: 'https://en.wikipedia.org/wiki/World_Environment_Day' },
+  { img: './images/jun_day6.jpg', title: 'Maharana Pratap Jayanti', date: '2023-06-06', content: 'Commemorating the birth anniversary of the great warrior Maharana Pratap.', link: 'https://en.wikipedia.org/wiki/Maharana_Pratap' },
+  { img: './images/jun_day7.jpg', title: 'World Food Safety Day', date: '2023-06-07', content: 'Promoting awareness about the importance of food safety.', link: 'https://en.wikipedia.org/wiki/World_Food_Safety_Day' },
+  { img: './images/jun_day8.jpg', title: 'World Oceans Day', date: '2023-06-08', content: 'Highlighting the importance of oceans and promoting ocean conservation.', link: 'https://en.wikipedia.org/wiki/World_Oceans_Day' },
+  { img: './images/jun_day9.jpg', title: 'World Accreditation Day', date: '2023-06-09', content: 'Raising awareness about the importance of accreditation.', link: 'https://en.wikipedia.org/wiki/World_Accreditation_Day' },
+  { img: './images/jun_day10.jpg', title: 'Lakshmi Puja', date: '2023-06-10', content: 'A Hindu festival dedicated to the goddess Lakshmi.', link: 'https://en.wikipedia.org/wiki/Lakshmi_Puja' },
+  { img: './images/jun_day11.jpg', title: 'World Day Against Child Labour', date: '2023-06-12', content: 'Focusing attention on the global extent of child labor and the action and efforts needed to eliminate it.', link: 'https://en.wikipedia.org/wiki/World_Day_Against_Child_Labour' },
+  { img: './images/jun_day12.jpg', title: 'World Blood Donor Day', date: '2023-06-14', content: 'Promoting blood donation as an act of solidarity and a way to help others.', link: 'https://en.wikipedia.org/wiki/World_Blood_Donor_Day' },
+  { img: './images/jun_day13.jpg', title: 'Kabir Jayanti', date: '2023-06-15', content: 'Celebrating the birth anniversary of the great saint Kabir.', link: 'https://en.wikipedia.org/wiki/Kabir' },
+  { img: './images/jun_day14.jpg', title: 'World Elder Abuse Awareness Day', date: '2023-06-15', content: 'Raising awareness about the abuse and neglect of older adults.', link: 'https://en.wikipedia.org/wiki/World_Elder_Abuse_Awareness_Day' },
+  { img: './images/jun_day15.jpg', title: 'World Wind Day', date: '2023-06-15', content: 'Celebrating wind energy and its potential to reshape our energy systems.', link: 'https://en.wikipedia.org/wiki/Global_Wind_Day' },
+  { img: './images/jun_day16.jpg', title: 'International Day of Family Remittances', date: '2023-06-16', content: 'Recognizing the contributions of migrant workers and their families.', link: 'https://en.wikipedia.org/wiki/International_Day_of_Family_Remitances' },
+  { img: './images/jun_day17.jpg', title: 'Yoga Day', date: '2023-06-21', content: 'Celebrating the ancient practice of yoga.', link: 'https://en.wikipedia.org/wiki/International_Yoga_Day' },
+  { img: './images/jun_day18.jpg', title: 'Rath Yatra', date: '2023-06-23', content: 'A Hindu festival involving the procession of deities on chariots.', link: 'https://en.wikipedia.org/wiki/Ratha_Yatra' },
+  { img: './images/jun_day19.jpg', title: 'International Day Against Drug Abuse and Illicit Trafficking', date: '2023-06-26', content: 'Raising awareness about the global drug problem.', link: 'https://en.wikipedia.org/wiki/International_Day_Against_Drug_Abuse_and_Illicit_Trafficking' },
+  { img: './images/jun_day20.jpg', title: 'National Statistics Day', date: '2023-06-29', content: 'Commemorating the birth anniversary of statistician Prasanta Chandra Mahalanobis.', link: 'https://en.wikipedia.org/wiki/Prasanta_Chandra_Mahalanobis' },
+  { img: './images/jun_day21.jpg', title: 'World Vitiligo Day', date: '2023-06-25', content: 'Raising awareness about vitiligo and supporting those affected by the condition.', link: 'https://en.wikipedia.org/wiki/World_Vitiligo_Day' },
+  { img: './images/jun_day22.jpg', title: 'Public Service Day', date: '2023-06-23', content: 'Highlighting the value and virtue of public service to the community.', link: 'https://en.wikipedia.org/wiki/Public_Service_Day' },
+  { img: './images/jun_day23.jpg', title: 'International Widows\' Day', date: '2023-06-23', content: 'Addressing the poverty and injustice faced by widows worldwide.', link: 'https://en.wikipedia.org/wiki/International_Widows%27_Day' },
+  { img: './images/jun_day24.jpg', title: 'World Music Day', date: '2023-06-21', content: 'Celebrating the universal language of music.', link: 'https://en.wikipedia.org/wiki/F%C3%AAte_de_la_Musique' },
+  { img: './images/jun_day25.jpg', title: 'International Olympic Day', date: '2023-06-23', content: 'Promoting the idea of an active and healthy lifestyle.', link: 'https://en.wikipedia.org/wiki/International_Olympic_Day' },
+  { img: './images/jun_day26.jpg', title: 'Anti-Emergency Day', date: '2023-06-25', content: 'Remembering the period of the Emergency in India from 1975 to 1977.', link: 'https://en.wikipedia.org/wiki/The_Emergency_(India)' },
+  { img: './images/jun_day28.jpg', title: 'World Drug Day', date: '2023-06-26', content: 'Continuing to raise awareness about the global drug problem.', link: 'https://en.wikipedia.org/wiki/International_Day_Against_Drug_Abuse_and_Illicit_Trafficking' },
+  { img: './images/jun_day30.jpg', title: 'Month-end Reflection', date: '2023-06-30', content: 'Reflecting on the achievements of the month.', link: 'Your_Wikipedia_Link_Here' },
+
+
+  { img: './images/jul_day1.jpg', title: 'Doctor\'s Day (India)', date: '2023-07-01', content: 'Honoring the contributions of doctors to society.', link: 'https://en.wikipedia.org/wiki/Doctor%27s_Day_(India)' },
+  { img: './images/jul_day2.jpg', title: 'World UFO Day', date: '2023-07-02', content: 'Encouraging awareness and research about unidentified flying objects (UFOs).', link: 'https://en.wikipedia.org/wiki/World_UFO_Day' },
+  { img: './images/jul_day3.jpg', title: 'International Plastic Bag Free Day', date: '2023-07-03', content: 'Promoting a plastic-free environment and reducing the use of plastic bags.', link: 'https://en.wikipedia.org/wiki/International_Plastic_Bag_Free_Day' },
+  { img: './images/jul_day4.jpg', title: 'Indian Police Foundation Day', date: '2023-07-04', content: 'Commemorating the establishment of the Indian Police.', link: 'https://en.wikipedia.org/wiki/Indian_Police_Service' },
+  { img: './images/jul_day5.jpg', title: 'Guru Purnima', date: '2023-07-05', content: 'Honoring and expressing gratitude to spiritual and academic teachers.', link: 'https://en.wikipedia.org/wiki/Guru_Purnima' },
+  { img: './images/jul_day6.jpg', title: 'World Zoonoses Day', date: '2023-07-06', content: 'Raising awareness about diseases that can be transmitted from animals to humans.', link: 'https://en.wikipedia.org/wiki/World_Zoonoses_Day' },
+  { img: './images/jul_day7.jpg', title: 'Global Forgiveness Day', date: '2023-07-07', content: 'Promoting forgiveness and reconciliation on a global scale.', link: 'https://en.wikipedia.org/wiki/Global_Forgiveness_Day' },
+  { img: './images/jul_day8.jpg', title: 'World Population Day', date: '2023-07-11', content: 'Focusing on global population issues and raising awareness.', link: 'https://en.wikipedia.org/wiki/World_Population_Day' },
+  { img: './images/jul_day9.jpg', title: 'Martyrs Day (India)', date: '2023-07-13', content: 'Honoring the sacrifices of martyrs in the struggle for independence.', link: 'https://en.wikipedia.org/wiki/Martyrs%27_Day_(India)' },
+  { img: './images/jul_day10.jpg', title: 'World Youth Skills Day', date: '2023-07-15', content: 'Promoting the importance of acquiring skills among youth for employment.', link: 'https://en.wikipedia.org/wiki/World_Youth_Skills_Day' },
+  { img: './images/jul_day11.jpg', title: 'National Broadcasting Day (India)', date: '2023-07-23', content: 'Commemorating the first-ever radio broadcast in India in 1927.', link: 'https://en.wikipedia.org/wiki/National_Broadcasting_Day_(India)' },
+  { img: './images/jul_day12.jpg', title: 'Kargil Vijay Diwas', date: '2023-07-26', content: 'Commemorating India\'s victory in the Kargil War.', link: 'https://en.wikipedia.org/wiki/Kargil_Vijay_Diwas' },
+  { img: './images/jul_day13.jpg', title: 'World Nature Conservation Day', date: '2023-07-28', content: 'Promoting the conservation of natural resources and biodiversity.', link: 'https://en.wikipedia.org/wiki/World_Nature_Conservation_Day' },
+  { img: './images/jul_day14.jpg', title: 'National Parents Day (India)', date: '2023-07-24', content: 'Honoring and appreciating parents for their role in the family.', link: 'https://en.wikipedia.org/wiki/Parents%27_Day_(India)' },
+  { img: './images/jul_day15.jpg', title: 'Kanwar Yatra', date: '2023-07-28', content: 'A pilgrimage of devotees of Shiva, known as Kanwariyas.', link: 'https://en.wikipedia.org/wiki/Kanwar_Yatra' },
+  { img: './images/jul_day16.jpg', title: 'Nag Panchami', date: '2023-07-30', content: 'A traditional Hindu festival dedicated to the worship of snakes.', link: 'https://en.wikipedia.org/wiki/Nag_Panchami' },
+  { img: './images/jul_day22.jpg', title: 'National Parents\' Day (India)', date: '2023-07-24', content: 'Continuing to honor and appreciate parents for their role in the family.', link: 'https://en.wikipedia.org/wiki/Parents%27_Day_(India)' },
+  { img: './images/jul_day25.jpg', title: 'International Tiger Day', date: '2023-07-29', content: 'Raising awareness about tiger conservation.', link: 'https://en.wikipedia.org/wiki/International_Tiger_Day' },
+  { img: './images/jul_day26.jpg', title: 'World Hepatitis Day', date: '2023-07-28', content: 'Raising awareness about hepatitis and promoting prevention and treatment.', link: 'https://en.wikipedia.org/wiki/World_Hepatitis_Day' },
+  { img: './images/jul_day27.jpg', title: 'Guru Har Krishan Sahib Ji Gurpurab', date: '2023-07-23', content: 'Celebrating the birth anniversary of Guru Har Krishan Sahib Ji, the eighth Sikh Guru.', link: 'https://en.wikipedia.org/wiki/Guru_Har_Krishan' },
+  { img: './images/jul_day31.jpg', title: 'Month-end Reflection', date: '2023-07-31', content: 'Reflecting on the achievements of the month.', link: 'Your_Wikipedia_Link_Here' },
+
+    
+  { img: './images/aug_day1.jpg', title: 'Quit India Movement Day', date: '2023-08-09', content: 'Commemorating the Quit India Movement launched in 1942.', link: 'https://en.wikipedia.org/wiki/Quit_India_Movement' },
+  { img: './images/aug_day2.jpg', title: 'World Indigenous Peoples Day', date: '2023-08-09', content: 'Highlighting and promoting the rights of indigenous communities globally.', link: 'https://en.wikipedia.org/wiki/International_Indigenous_Peoples_Day' },
+  { img: './images/aug_day3.jpg', title: 'Hiroshima Day', date: '2023-08-06', content: 'Remembering the victims of the atomic bombing of Hiroshima in 1945.', link: 'https://en.wikipedia.org/wiki/Hiroshima_Day' },
+ 
+  { img: './images/aug_day5.jpg', title: 'World Elephant Day', date: '2023-08-12', content: 'Raising awareness about the conservation and protection of elephants.', link: 'https://en.wikipedia.org/wiki/World_Elephant_Day' },
+  { img: './images/aug_day6.jpg', title: 'Parsi New Year (Jamshedi Navroz)', date: '2023-08-17', content: 'Celebrating the Parsi New Year and the arrival of spring.', link: 'https://en.wikipedia.org/wiki/Nowruz' },
+  { img: './images/aug_day7.jpg', title: 'Raksha Bandhan', date: '2023-08-07', content: 'A Hindu festival celebrating the bond between brothers and sisters.', link: 'https://en.wikipedia.org/wiki/Raksha_Bandhan' },
+  { img: './images/aug_day8.jpg', title: 'World Sanskrit Day', date: '2023-08-26', content: 'Promoting the ancient Indian language of Sanskrit and its cultural significance.', link: 'https://en.wikipedia.org/wiki/Sanskrit' },
+  { img: './images/aug_day9.jpg', title: 'National Sports Day (India)', date: '2023-08-29', content: 'Honoring the birth anniversary of Indian hockey legend Dhyan Chand.', link: 'https://en.wikipedia.org/wiki/National_Sports_Day_(India)' },
+  { img: './images/aug_day10.jpg', title: 'Krishna Janmashtami', date: '2023-08-08', content: 'Celebrating the birth of Lord Krishna in Hinduism.', link: 'https://en.wikipedia.org/wiki/Krishna_Janmashtami' },
+  { img: './images/aug_day11.jpg', title: 'World Humanitarian Day', date: '2023-08-19', content: 'Honoring humanitarian efforts and advocating for the well-being of people affected by crises.', link: 'https://en.wikipedia.org/wiki/World_Humanitarian_Day' },
+ 
+  { img: './images/aug_day19.jpg', title: 'World Photography Day', date: '2023-08-19', content: 'Celebrating the art, science, and history of photography.', link: 'https://en.wikipedia.org/wiki/World_Photography_Day' },
+  { img: './images/aug_day24.jpg', title: 'National Handloom Day (India)', date: '2023-08-07', content: 'Promoting handloom weaving and honoring handloom workers.', link: 'https://en.wikipedia.org/wiki/National_Handloom_Day' },
+  { img: './images/aug_day25.jpg', title: 'Tiranga Dhwaj Nirman Diwas', date: '2023-08-09', content: 'Observing the creation of the Indian national flag.', link: 'https://en.wikipedia.org/wiki/Flag_of_India' },
+  { img: './images/aug_day26.jpg', title: 'Women\'s Equality Day', date: '2023-08-26', content: 'Promoting gender equality and commemorating women\'s rights.', link: 'https://en.wikipedia.org/wiki/Women%27s_Equality_Day' },
+  { img: './images/aug_day27.jpg', title: 'Kanika Panchhi Mela', date: '2023-08-14', content: 'A bird fair held in India to promote bird conservation and awareness.', link: 'Your_Wikipedia_Link_Here' },
+  { img: './images/aug_day28.jpg', title: 'National Science Day (India)', date: '2023-08-28', content: 'Celebrating the contributions of Indian scientists.', link: 'https://en.wikipedia.org/wiki/National_Science_Day_(India)' },
+  { img: './images/aug_day29.jpg', title: 'International Day against Nuclear Tests', date: '2023-08-29', content: 'Promoting awareness and advocating for the ban of nuclear tests.', link: 'https://en.wikipedia.org/wiki/International_Day_against_Nuclear_Tests' },
+  { img: './images/aug_day31.jpg', title: 'Month-end Reflection', date: '2023-08-31', content: 'Reflecting on the achievements of the month.', link: 'Your_Wikipedia_Link_Here' },
+
+
+  { img: './images/sep_day1.jpg', title: 'National Nutrition Week (India)', date: '2023-09-01', content: 'Promoting awareness about nutrition and its importance for health.', link: 'https://en.wikipedia.org/wiki/National_Nutrition_Week_(India)' },
+  { img: './images/sep_day2.jpg', title: 'Teachers\' Day (India)', date: '2023-09-05', content: 'Honoring and appreciating the contributions of teachers.', link: 'https://en.wikipedia.org/wiki/Teachers%27_Day_(India)' },
+  { img: './images/sep_day3.jpg', title: 'Engineers\' Day (India)', date: '2023-09-15', content: 'Celebrating the birth anniversary of Sir M. Visvesvaraya, a notable engineer.', link: 'https://en.wikipedia.org/wiki/Engineers%27_Day_(India)' },
+  { img: './images/sep_day4.jpg', title: 'Hindi Diwas', date: '2023-09-14', content: 'Celebrating the Hindi language and promoting its usage.', link: 'https://en.wikipedia.org/wiki/Hindi_Diwas' },
+  { img: './images/sep_day5.jpg', title: 'International Day of Democracy', date: '2023-09-15', content: 'Promoting and upholding the principles of democracy worldwide.', link: 'https://en.wikipedia.org/wiki/International_Day_of_Democracy' },
+  { img: './images/sep_day6.jpg', title: 'World Ozone Day', date: '2023-09-16', content: 'Raising awareness about the protection of the ozone layer.', link: 'https://en.wikipedia.org/wiki/International_Day_for_the_Preservation_of_the_Ozone_Layer' },
+    
+  { img: './images/oct_day1.jpg', title: 'Gandhi Jayanti', date: '2023-10-02', content: 'Commemorating the birth anniversary of Mahatma Gandhi.', link: 'https://en.wikipedia.org/wiki/Gandhi_Jayanti' },
+  { img: './images/oct_day2.jpg', title: 'Lal Bahadur Shastri Jayanti', date: '2023-10-02', content: 'Remembering the second Prime Minister of India, Lal Bahadur Shastri.', link: 'https://en.wikipedia.org/wiki/Lal_Bahadur_Shastri' },
+  { img: './images/oct_day3.jpg', title: 'Air Force Day (India)', date: '2023-10-08', content: 'Honoring the Indian Air Force and its contributions.', link: 'https://en.wikipedia.org/wiki/Indian_Air_Force_Day' },
+  { img: './images/oct_day4.jpg', title: 'Indian Postal Service Day', date: '2023-10-10', content: 'Celebrating the establishment of the Indian Postal Service.', link: 'https://en.wikipedia.org/wiki/Indian_Postal_Service' },
+  { img: './images/oct_day5.jpg', title: 'World Food Day', date: '2023-10-16', content: 'Promoting awareness about food security and sustainable agriculture.', link: 'https://en.wikipedia.org/wiki/World_Food_Day' },
+  { img: './images/oct_day6.jpg', title: 'World Savings Day', date: '2023-10-31', content: 'Encouraging savings and financial awareness worldwide.', link: 'https://en.wikipedia.org/wiki/World_Savings_Day' },
+  { img: './images/oct_day7.jpg', title: 'Indian Air Force Day', date: '2023-10-08', content: 'Continuing to honor the Indian Air Force and its contributions.', link: 'https://en.wikipedia.org/wiki/Indian_Air_Force_Day' },
+  { img: './images/oct_day31.jpg', title: 'Month-end Reflection', date: '2023-10-31', content: 'Reflecting on the achievements of the month.', link: 'Your_Wikipedia_Link_Here' },
+
+  { img: './images/nov_day1.jpg', title: 'Kannada Rajyotsava', date: '2023-11-01', content: 'Celebrating the formation of the state of Karnataka.', link: 'https://en.wikipedia.org/wiki/Kannada_Rajyotsava' },
+  { img: './images/nov_day2.jpg', title: 'National Education Day', date: '2023-11-11', content: 'Commemorating the birth anniversary of Maulana Abul Kalam Azad.', link: 'https://en.wikipedia.org/wiki/National_Education_Day_(India)' },
+  { img: './images/nov_day3.jpg', title: 'Guru Nanak Jayanti', date: '2023-11-05', content: 'Celebrating the birth anniversary of Guru Nanak Dev Ji, the founder of Sikhism.', link: 'https://en.wikipedia.org/wiki/Guru_Nanak_Jayanti' },
+  { img: './images/nov_day4.jpg', title: 'Constitution Day (India)', date: '2023-11-26', content: 'Commemorating the adoption of the Indian Constitution.', link: 'https://en.wikipedia.org/wiki/Constitution_of_India' },
+  { img: './images/nov_day5.jpg', title: 'Lachit Divas', date: '2023-11-24', content: 'Honoring Lachit Borphukan, a heroic commander in the Ahom kingdom.', link: 'https://en.wikipedia.org/wiki/Lachit_Borphukan' },
+  { img: './images/nov_day6.jpg', title: 'National Milk Day', date: '2023-11-26', content: 'Celebrating the birth anniversary of Dr. Verghese Kurien, the father of the White Revolution in India.', link: 'https://en.wikipedia.org/wiki/Verghese_Kurien' },
+  { img: './images/nov_day31.jpg', title: 'Month-end Reflection', date: '2023-11-30', content: 'Reflecting on the achievements of the month.', link: 'Your_Wikipedia_Link_Here' },
+
+  { img: './images/dec_day1.jpg', title: 'Goa Liberation Day', date: '2023-12-19', content: 'Celebrating the liberation of Goa from Portuguese rule.', link: 'https://en.wikipedia.org/wiki/Goa_Liberation_Day' },
+  { img: './images/dec_day2.jpg', title: 'Indian Navy Day', date: '2023-12-04', content: 'Honoring the achievements and contributions of the Indian Navy.', link: 'https://en.wikipedia.org/wiki/Indian_Navy_Day' },
+  { img: './images/dec_day3.jpg', title: 'Vijay Diwas', date: '2023-12-16', content: 'Commemorating India’s victory over Pakistan in the 1971 war.', link: 'https://en.wikipedia.org/wiki/Vijay_Diwas_(India)' },
+  { img: './images/dec_day4.jpg', title: 'National Mathematics Day', date: '2023-12-22', content: 'Celebrating the birth anniversary of mathematician Srinivasa Ramanujan.', link: 'https://en.wikipedia.org/wiki/National_Mathematics_Day' },
+  { img: './images/dec_day5.jpg', title: 'Minorities Rights Day', date: '2023-12-18', content: 'Observing the rights and contributions of minorities in India.', link: 'https://en.wikipedia.org/wiki/Minorities_Rights_Day' },
+  { img: './images/dec_day6.jpg', title: 'Guru Tegh Bahadur Martyrdom Day', date: '2023-12-19', content: 'Remembering the sacrifice of Guru Tegh Bahadur, the ninth Sikh Guru.', link: 'https://en.wikipedia.org/wiki/Guru_Tegh_Bahadur' },
+  { img: './images/dec_day25.jpg', title: 'Christmas Day', date: '2023-12-25', content: 'Celebrating the birth of Jesus Christ.', link: 'https://en.wikipedia.org/wiki/Christmas' },
+  { img: './images/dec_day26.jpg', title: 'Good Governance Day', date: '2023-12-25', content: 'Promoting awareness and practices of good governance in India.', link: 'https://en.wikipedia.org/wiki/Good_Governance_Day' },
+  { img: './images/dec_day31.jpg', title: 'Year-end Reflection', date: '2023-12-31', content: 'Reflecting on the achievements and challenges of the year.', link: 'Your_Wikipedia_Link_Here' },
+
+
+          { img:'./images/indpendence day.jpg', title: 'Happy Independence Day', date: '2023-08-15', content: 'Know about Happy Independence Day', link:'./Blog/independence.html' },
+          
+          { img:'./images/art-design-1.jpg', title: 'Mahatma Ghandi jayanti and Lal Bahadur shastri jayanti', date: '2023-10-02', content: 'Ghandi jayanti and Lal Bahadur shastri jayanti', link:'./Blog/gandhi.html' },
+          { img:'./images/criminal.jpeg', title: 'Day of International Criminal Justice', date: '2023-07-17', content: 'Day of International Criminal Justice.', link:'./Blog/criminal.html' },
+          { img:'./images/art-design-1.jpg', title: 'Happy Ayurveda Day', date: '2023-10-23', content: 'Happy Ayurveda Day.', link:'./Blog/unityda' },
+          { img:'./images/armed.jpg', title: 'Happy Armed Force', date: '2023-05-03', content: 'Happy Armed Force' , link:'./Blog/armedforce.html'},
+          { img:'./images/art-design-1.jpg', title: 'Happy Valentine Day.', date: '2023-02-14', content: 'Happy Valentine Day' , link:'./Blog/unityday.html'},
+          { img:'./images/father.jpeg', title: 'Father Day.', date: '2023-06-19', content: 'Father Day' , link:'./Blog/father.html'},
+          { img:'./images/animal.jpg', title: 'World Animal Day.', date: '2023-10-04', content: 'World Animal Day..' , link:'www.google.com'},
+          { img:'./images/.jpg', title: 'World Diabetes Day', date: '2023-11-14', content: 'World Diabetes Day' , link:'./Blog/diabetes.html'},
+          { img:'./images/heart.jpg', title: 'World Heart Day', date: '2023-09-29', content: 'World Heart Day' , link:'./Blog/heart.html'},
+          { img:'./images/peace.jpg', title: 'International Day of Peace', date: '2023-09-21', content: 'International Day of Peace' , link:'./Blog/peace.html'},
+          { img:'./images/daughter.jpg', title: 'Happy Daughter Day', date: '2023-09-24', content: 'Happy Daughter Day.' , link:'./Blog/daughter.html'},
+          { img:'./images/labour.jpg', title: 'World Labour Day', date: '2023-09-02', content: 'World Labour Day.' , link:'./Blog/'},
+          { img:'./images/podcast.jpg', title: 'International Podcast Day', date: '2023-09-30', content: 'International Podcast Day.' , link:'./Blog/podcast.html'},
+          { img:'./images/eng.png', title: 'Happy Engineers Day', date: '2023-12-05', content: 'Happy Engineers Day.' , link:'./Blog/engineering(1).html'},
+          { img:'./images/feb_day28.jpg', title: 'National Science Day', date: '2023-02-28', content: 'Celebrating the discovery of the Raman Effect by Sir C.V. Raman.', link:'https://en.wikipedia.org/wiki/National_Science_Day' },
+      ]
+      
+
+      
+
+
+
+
+
+
+
+      const datepicker = document.getElementById('datepicker');
+      const blogPostContainer = document.getElementById('blog-posts');
+
+      datepicker.addEventListener('change', () => {
+          const selectedDate = datepicker.value;
+
+    
+          // Clear the previous blog posts
+          blogPostContainer.innerHTML = '';
+
+          // Filter and display blog posts based on the selected date
+          const filteredPosts = blogPosts.filter(post => post.date === selectedDate);
+
+          if (filteredPosts.length === 0) {
+              blogPostContainer.style.display='flex';
+              blogPostContainer.innerHTML = '<p style="color: red;">Sorry! No posts found for the selected date. We Will fix it quickely.</p>';
+          } else {
+              filteredPosts.forEach(post => {
+                  const postElement = document.createElement('div');
+
+                  postElement.innerHTML = 
+                  `
+                      
+                      <img style=" height:250px; width:360px; border-radius:10px;" src="${post.img}" alt="">
+                      <h2 style="margin-top:40px">${post.title}</h2>
+                      <p style="color:gray; padding-bottom:0">Date: ${post.date}</p>
+                      <p style="padding-top:0; margin:0;margin-top:20px;">${post.content}</p>
+                      <a style="padding: 10px; background-color: black; color: white; font-size: 20px; text-decoration: none; border-radius: 10px; " href="${post.link}">Read more</a>
+                  `;
+                  blogPostContainer.appendChild(postElement);
+              });
+          }
+          selectedDate = "";
+      });
+
+  </script>
+  </body>
+</html>
