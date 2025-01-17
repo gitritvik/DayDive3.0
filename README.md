@@ -36,7 +36,7 @@ The project is built using:
 
 ![Homepage Screenshot](https://github.com/gitritvik/DayDive3.0/blob/ebf3586e473142d87643324abbf0800e769f65fd/HomepageScreenshot.png)
 ### Add Event
-![Add Event Screenshot] DayDive3.0\images\AddEventScreenshot.png
+![Add Event Screenshot] (https://github.com/gitritvik/DayDive3.0/blob/5af1856c35fed2935e51bbf3714a8f2625c02a1e/AddEventScreenshot.png)
 
 Visit the live site: [DayDive](https://gitritvik.github.io/DayDive3.0/)
 
