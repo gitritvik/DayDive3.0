@@ -31,9 +31,10 @@ The project is built using:
 
 ## 📸 Demo
 ### Homepage
+ 
 
 
-![Homepage Screenshot](DayDive3.0\images\HomepageScreenshot.png)
+![Homepage Screenshot](images\HomepageScreenshot.png)
 ### Add Event
 ![Add Event Screenshot] DayDive3.0\images\AddEventScreenshot.png
 
