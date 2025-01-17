@@ -34,7 +34,7 @@ The project is built using:
  
 
 
-![Homepage Screenshot](images\HomepageScreenshot.png)
+![Homepage Screenshot](https://github.com/gitritvik/DayDive3.0/blob/ebf3586e473142d87643324abbf0800e769f65fd/HomepageScreenshot.png)
 ### Add Event
 ![Add Event Screenshot] DayDive3.0\images\AddEventScreenshot.png
 
