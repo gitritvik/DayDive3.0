@@ -31,13 +31,15 @@ The project is built using:
 
 ## 📸 Demo
 ### Homepage
- 
 
 
 ![Homepage Screenshot](https://github.com/gitritvik/DayDive3.0/blob/ebf3586e473142d87643324abbf0800e769f65fd/HomepageScreenshot.png)
+
+
 ### Add Event
 ![Add Event Screenshot](https://github.com/gitritvik/DayDive3.0/blob/5af1856c35fed2935e51bbf3714a8f2625c02a1e/AddEventScreenshot.png)
 
+### Weather information
 ![Weather Info page](https://github.com/gitritvik/DayDive3.0/blob/346e66fa4dfa6e808f41c50761606dd70aa691f2/WeatherPage.png)
 
 Visit the live site: [DayDive](https://gitritvik.github.io/DayDive3.0/)
